@@ -80,50 +80,38 @@ h1{
 }
 
 /*BARRA DE NAVEGACION*/
-nav{
-    background-color: #000343;  
+
+.menu {
+    display: flex;
+    justify-content: center;
     
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 10px;
-    
-}
-
-nav ul li {
+.navbar {
     display: inline-block;
-    margin-right: 20px;
+   
 }
 
-nav a {
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 15px;
+    border: 2px;
+}
+
+.nav-link {
+    
     text-decoration: none;
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    padding: 10px;
 }
-
 nav ul li a:hover {
-    background-color: #fff;
-    color: #333;
+    background-color: rgb(115, 113, 129);
     border-radius: 5px;
 }
-
-
-.responsive-table {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-.responsive-table a {
-    margin: 5px; 
-}
-
-
 /*codigo para las tablas*/
 table {
     width: 80%;
@@ -368,10 +356,6 @@ footer p{
         grid-template-columns: 1fr;
     }
 
-    nav ul {
-        text-align: center;
-       
-    }
 
     section.informacion {
         text-align: center;
@@ -422,6 +406,12 @@ footer p{
         padding: 10px;
     }
 
+    .menu {
+        display: flex;
+        justify-content: left;
+        
+    }
+
     
 }
 
@@ -430,10 +420,6 @@ footer p{
         text-align: center;
     }
 
-    nav ul {
-        text-align: center;
-        margin-top: 10px;
-    }
 
     section.informacion {
         text-align: center;
@@ -456,5 +442,10 @@ footer p{
         color: white;
         text-align: center;
         padding: 10px;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        
     }
 }
