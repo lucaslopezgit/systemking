@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" href="img/favicon.ico">
+    <title>Iniciar Sesión / Crear Usuario</title>
+</head>
+<body>
+    <header>
+        <h1>System-King</h1>  
+    </header>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="usuarios.html">USUARIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+    </div>
+   
+    <h3>INICIAR SESIÓN</h3>
+    <form action="show_data.html" method="post">
+        <table class="usu">
+            <tr>
+                <td>Usuario:</td>
+                <td><input type="text" name="usuario" placeholder="usuario"></td>
+            </tr>
+            <tr>
+                <td>Contraseña:</td>
+                <td><input type="password" name="contraseña" placeholder="Contraseña"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Iniciar Sesión"></td>
+            </tr>
+        </table> 
+    </form>
+
+    <h3>CREA TU USUARIO</h3>
+    <form action="show_data.html" method="post">
+        <table class="usu">
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre" placeholder="Nombre "></td>
+            </tr>
+            <tr>
+                <td>Correo Electrónico:</td>
+                <td><input type="email" name="correo" placeholder="Correo"></td>
+            </tr>
+            <tr>
+                <td>Contraseña:</td>
+                <td><input type="password" name="contrasena" placeholder="Contraseña"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Crear Usuario"></td>
+            </tr>
+        </table>
+    </form>
+
+    <footer>
+        <p>&copy; 2023 System-King</p>
+    </footer>
+</body>
+</html>

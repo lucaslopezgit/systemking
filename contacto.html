@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>System-King</h1>
+    </header>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="usuarios.html">USUARIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+    </div>
+
+    <div class="contact-form">
+        
+        <h2>Formulario de Contacto</h2>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            
+            <form action="show_data.html" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido">
+                
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número telefónico" required>
+                
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese su Ciudad">
+                
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" value="Buenos Aires">
+                
+                <label for="birthdate">FecDeNac:</label>
+                <input type="date" name="birthdate">
+                
+            </form>
+        </fieldset>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <input type="submit" value="Enviar">
+    </div>
+    
+    <div class="location">
+        <fieldset>
+            <legend>Nuestra Ubicación</legend>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.559743681227!2d-58.63354371051674!3d-34.79185699753999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5925425fb9b%3A0xb6680e29203b8739!2sCUDI.%20Centro%20Universitario%20de%20la%20Innovaci%C3%B3n.%20Gonz%C3%A1lez%20Cat%C3%A1n!5e0!3m2!1ses-419!2sar!4v1695254471014!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </fieldset>
+    </div>
+    <footer>
+        <p>&copy; 2023 System-King</p>
+    </footer>
+</body>
+</html>
